@@ -1,7 +1,7 @@
 require_relative '../app/models/student'
 
 module StudentsImporter
-  def self.import(filename=File.dirname(__FILE__) + "/../db/data/students.csv")
+  def self.import(filename=File.dirname(__FILE__) + "/../db/data/dbcstudents.csv")
     field_names = nil
     Student.transaction do
       File.open(filename).each do |line|

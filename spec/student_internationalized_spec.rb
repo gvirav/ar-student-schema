@@ -18,7 +18,7 @@ describe Student, "internationalized" do
       student.update_attributes(
         :name => "Jane Doe",
         :gender => "female",
-        :birthday => Time.new(1973, 01, 01),
+        :birthday => Time.new(1973, 01, 01).to_date,
         :email => "jane.doe@example.com",
         :phone => "510-555-1212",
         :address => "123 4th St New York NY 10101"
